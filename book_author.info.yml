@@ -1,0 +1,5 @@
+name: 'Book Author'
+type: module
+description: 'Manage author for book catalogue'
+core: 8.x
+package: 'Book Catalogue'

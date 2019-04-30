@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains book_author.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function book_author_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the book_author module.
+    case 'help.page.book_author':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Manage author for book catalogue') . '</p>';
+      return $output;
+
+    default:
+  }
+}

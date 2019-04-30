@@ -1,0 +1,14 @@
+{
+  "name": "drupal/book_author",
+  "type": "drupal-module",
+  "description": "Manage author for book catalogue",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/book_author",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/book_author",
+    "source": "http://cgit.drupalcode.org/book_author"
+  },
+  "require": { }
+}
