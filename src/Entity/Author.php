@@ -33,7 +33,7 @@ use Drupal\user\UserInterface;
  *       "html" = "Drupal\book_author\AuthorHtmlRouteProvider",
  *     },
  *   },
- *   base_table = "author",
+ *   base_table = "book_author",
  *   admin_permission = "administer author entities",
  *   entity_keys = {
  *     "id" = "id",
@@ -44,7 +44,7 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "/admin/content/author/{author}",
+ *     "canonical" = "/author/{author}",
  *     "add-form" = "/admin/content/author/add",
  *     "edit-form" = "/admin/content/author/{author}/edit",
  *     "delete-form" = "/admin/content/author/{author}/delete",
@@ -182,7 +182,7 @@ class Author extends ContentEntityBase implements AuthorInterface {
       ])
       ->setDefaultValue('')
       ->setDisplayOptions('view', [
-        'label' => 'above',
+        'label' => 'hidden',
         'type' => 'string',
         'weight' => -4,
       ])
