@@ -177,7 +177,7 @@ class Author extends ContentEntityBase implements AuthorInterface {
       ->setLabel(t('Name'))
       ->setDescription(t('The name of the Author entity.'))
       ->setSettings([
-        'max_length' => 50,
+        'max_length' => 255,
         'text_processing' => 0,
       ])
       ->setDefaultValue('')
