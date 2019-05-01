@@ -31,7 +31,7 @@ class AuthorListBuilder extends EntityListBuilder {
     $row['id'] = $entity->id();
     $row['name'] = Link::createFromRoute(
       $entity->label(),
-      'entity.author.edit_form',
+      'entity.author.canonical',
       ['author' => $entity->id()]
     );
     return $row + parent::buildRow($entity);
